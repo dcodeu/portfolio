@@ -60,7 +60,7 @@ section {
     border-right: .15em solid #fff;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+    animation: typing 3s steps(30, end), blink-caret 10s step-end, change-text 0.1s 3s forwards;
 }
 
 @keyframes typing {
@@ -69,8 +69,12 @@ section {
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
+    0%, 100% { border-color: transparent; }
     50% { border-color: #fff; }
+}
+
+@keyframes change-text {
+    to { content: "Hey, I'm DJ Wilson"; }
 }
 
 #about, #resume, #projects, #contact {
