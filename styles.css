@@ -9,10 +9,13 @@ body {
     line-height: 1.6;
     position: relative;
     min-height: 100vh;
+    background: url('main-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
 }
 
 header {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     padding: 1rem 0;
 }
@@ -43,13 +46,12 @@ section {
 }
 
 #home {
-    background: linear-gradient(135deg, #ff6f61, #d94545);
-    color: #fff;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.6); /* Adding a dark overlay */
 }
 
 .typing {
@@ -72,14 +74,15 @@ section {
 }
 
 #about, #resume, #projects, #contact {
-    background: #f4f4f4;
+    background: rgba(244, 244, 244, 0.8);
+    color: #000;
 }
 
 .about-content, .resume-content, .projects-content, .contact-content {
     max-width: 800px;
     margin: auto;
     padding: 2rem;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -90,7 +93,7 @@ section {
 }
 
 footer {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
