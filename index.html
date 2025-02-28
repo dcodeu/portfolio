@@ -1,64 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJ's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ's Portfolio</title>
+  
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HEADER & NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-name">DJ Wilson</div>
+    </nav>
+  </header>
 
-    <section id="home">
-        <div class="home-content">
-            <h1 class="typing">Hi, I'm DJ Wilson</h1>
-            <p>Tech Enthusiast | Healthcare IT | Customer Service</p>
+  <!-- HOME SECTION -->
+  <section id="home" class="float">
+    <div class="home-content">
+      <!-- Typing effect text (controlled by script.js) -->
+      <h1 class="typing">Hi, I'm DJ Wilson</h1>
+      <p>Automation Architect | AI Prompting & API Integrations | IT Innovator</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="float">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I’m a dynamic IT professional passionate about automating workflows and integrating cutting‐edge APIs.
+        Whether troubleshooting systems or deploying innovative solutions, I merge technical expertise 
+        with creative problem-solving. When not optimizing IT environments, I love exploring new technologies 
+        and sharing insights with fellow tech enthusiasts.
+      </p>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume" class="float">
+    <div class="resume-content">
+      <h2>Resume Highlights</h2>
+      <div class="resume-section">
+        <h3>Professional Summary</h3>
+        <ul>
+          <li>Dynamic IT professional with expertise in automation, API integrations, and ServiceNow administration.</li>
+          <li>Strong background in scripting (JavaScript, XML, HTML, CSS) and network troubleshooting.</li>
+        </ul>
+      </div>
+      <div class="resume-section">
+        <h3>Experience</h3>
+        <ul>
+          <li><strong>End User Support Analyst</strong> at ECU Health – Providing high-level support, troubleshooting, and automation initiatives.</li>
+          <li><strong>Escalations Support Manager</strong> at CustomerHD – Resolved escalated issues and enhanced customer satisfaction.</li>
+          <li><strong>Support Material Expert</strong> at CustomerHD – Delivered outstanding client support and streamlined processes.</li>
+        </ul>
+      </div>
+      <div class="resume-section">
+        <h3>Skills & Tools</h3>
+        <ul>
+          <li>Scripting: JavaScript, XML, HTML, CSS</li>
+          <li>Automation & Integration (API-driven, AI prompting)</li>
+          <li>Networking and troubleshooting</li>
+          <li>ServiceNow administration and workflow design</li>
+          <li>Tools: SysTrack, Zendesk, SCCM, Google Workspace, Cloudflare</li>
+        </ul>
+      </div>
+      <div class="resume-section">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>Nash Community College</strong> – Networking Administration & CyberSecurity (Associates Degree)</li>
+          <li><strong>Haliwa-Saponi Tribal School</strong> – High School Diploma</li>
+        </ul>
+      </div>
+      <div class="resume-section">
+        <h3>Certifications</h3>
+        <ul>
+          <li>SysTrack Certified Administrator &amp; L1 Help Desk</li>
+          <li>Working with Virtual Environments (SysTrack)</li>
+          <li>Certified Desktop Engineer</li>
+          <li>Micro-Certification – Welcome to ServiceNow</li>
+        </ul>
+      </div>
+      <div class="resume-section">
+        <h3>Volunteering</h3>
+        <ul>
+          <li>Volunteer / Community Manager at “This is an IT Support Group” – Mentoring and guiding IT professionals.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="float">
+    <div class="projects-content">
+      <h2>Projects</h2>
+      <ul>
+        <li>GitHub Contributions: Developed scripts and automation tools to enhance IT infrastructure and ServiceNow workflows.</li>
+        <li>Open-Source Collaboration: Active contributor to projects that optimize enterprise IT solutions.</li>
+        <li>Explore my work on <a href="https://github.com/dcodeu" target="_blank">GitHub</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="float">
+    <div class="contact-content">
+      <h2>Contact</h2>
+      <p>Want to connect or have questions? Reach out!</p>
+      <p>
+        <strong>Location:</strong> Hollister, NC 27844<br/>
+        <strong>Email:</strong> <a href="mailto:danielwilson2409@gmail.com">danielwilson2409@gmail.com</a><br/>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/techdjw" target="_blank">linkedin.com/in/techdjw</a>
+      </p>
+      <form action="#" method="POST" class="contact-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
         </div>
-    </section>
-
-    <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>Brief introduction about yourself, your interests, and your background.</p>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
         </div>
-    </section>
-
-    <section id="resume">
-        <div class="resume-content">
-            <h2>Resume</h2>
-            <p>Provide a brief overview of your resume. Consider embedding a downloadable PDF of your resume here.</p>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-    </section>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
-    <section id="projects">
-        <div class="projects-content">
-            <h2>Projects</h2>
-            <p>Showcase your tech projects with descriptions and links to GitHub repositories or live demos.</p>
-        </div>
-    </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 DJ. All rights reserved. | References available upon request</p>
+  </footer>
 
-    <section id="contact">
-        <div class="contact-content">
-            <h2>Contact</h2>
-            <p>Provide your contact information and a contact form for visitors to reach out to you.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 DJ. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- Link to External JS -->
+  <script src="script.js"></script>
 </body>
 </html>
